@@ -22,7 +22,7 @@ function Signup(props) {
     if(json.success){
         // SAVE AUTHTOKEN AND REDIRECT
         localStorage.setItem('token',json.authtoken)
-        props.showAlert("account created","success")
+        props.showAlert("account created Check your email inbox/spam ","success")
         history("/")
     }
     else{
